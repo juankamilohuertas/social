@@ -99,26 +99,34 @@
       </nav>
       <!-- __________________________________________________________________________________ -->
       <!-- notificaciones -->
-      <section class="conte--notificarYpublicar container py-1">
+      <section class="conte--notificarYpublicar position-relative py-1 px-3">
         <div>
           <i class="fa-regular fa-bell text-light"></i>
         </div>
-      <!-- publicar -->
+        <!-- publicar -->
         <div>
-            <button
-              id="btnPublicar"
-              type="button"
-              class="btn btn-primary d-flex align-items-center"
-              style="
-                --bs-btn-padding-y: 0.25rem;
-                --bs-btn-padding-x: 0.5rem;
-                --bs-btn-font-size: 0.75rem;
-              "
-            >
-              <span>Publicar</span><i class="fa-solid fa-plus ps-1"></i>
-            </button>
-          </div>
+          <button
+            id="btnCrearPublicacion"
+            type="button"
+            class="btn btn-primary d-flex align-items-center"
+            style="
+              --bs-btn-padding-y: 0.25rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            <span>Publicar</span><i class="fa-solid fa-plus ps-1"></i>
+          </button>
+        </div>
+        <!-- modal publicar-->
+        <div
+          id="conteModalPublicacion"
+          class="z-3 position-absolute top-0 start-0"
+        ></div>
       </section>
+      <!-- _______________________________________________________________________________ -->
+      <!-- publicaciones creadas -->
+      <section class="contePublicaciones"></section>
     </main>
     <script src="./publicar.js"></script>
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
