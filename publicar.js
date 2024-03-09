@@ -90,12 +90,12 @@ class Publicacion {
     subContePublicaciones.className = "card border border-1 m-2";
     subContePublicaciones.innerHTML = `
     <div class="card-body p-2">
-      <div class="d-flex align-items-center justify-content-between mb-2 border border-1 rounded-2">
+      <div class="d-flex align-items-center justify-content-between mb-2 border border-1 rounded-2 p-1">
         <div class="pe-2">
           <img src="https://robohash.org/user" class="border-end rounded-start" width="40">
         </div>
         <div class="flex-grow-1">
-          <h5 class="card-title m-0" style="font-size:.9rem">${titulo}</h5>
+          <h5 class="card-title m-0" style="font-size:.9rem fw-semibold">${titulo}</h5>
           <p class="card-text text-break" style="font-size:.7rem; line-height: .8rem">${descripcion}</p>
         </div>
         <div class="dropdown ps-2">
