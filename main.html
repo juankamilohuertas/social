@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/estilos.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <script
+      src="https://kit.fontawesome.com/c585fd84a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Social</title>
+  </head>
+  <body id="body" class="body">
+    <main id="root" class="root">
+      <!-- menu de navegacion -->
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://robohash.org/branch"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            Red
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                My Red
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Publicaciones Recientes</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Formación
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Cursos</a></li>
+                    <li><a class="dropdown-item" href="#">Tecnica</a></li>
+                    <li><a class="dropdown-item" href="#">Tecnologo</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Otros</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar..."
+                  aria-label="Search"
+                />
+                <button class="btn btn-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- __________________________________________________________________________________ -->
+      <!-- notificaciones -->
+      <section class="conte--notificarYpublicar position-relative py-1 px-3">
+        <div>
+          <i class="fa-regular fa-bell text-light"></i>
+        </div>
+        <!-- publicar -->
+        <div>
+          <button
+            id="btnCrearP"
+            type="button"
+            class="btn btn-primary d-flex align-items-center"
+            style="
+              --bs-btn-padding-y: 0.25rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            <span>Publicar</span><i class="fa-solid fa-plus ps-1"></i>
+          </button>
+        </div>
+        <!-- modal publicar-->
+        <div id="conteModalP" class="z-3 position-absolute top-0 start-0"></div>
+      </section>
+      <!-- _______________________________________________________________________________ -->
+      <!-- publicaciones creadas -->
+      <section id="conteP" class="container-fluid p-0"></section>
+    </main>
+    <script src="./publicar.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
