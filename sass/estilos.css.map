@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["_notificarYpublicar.sass","_mixins.sass","estilos.sass"],"names":[],"mappings":"AACA;EACI;ECDA;EACA,iBDCwB;ECAxB;;;ACFJ;EACI","file":"estilos.css"}
+{"version":3,"sources":["_notificarYpublicar.sass","_mixins.sass","estilos.css","estilos.sass"],"names":[],"mappings":"AACA;EACI,sBAAA;ECDA,aAAA;EACA,8BDCwB;ECAxB,mBAAA;ACEJ;;ACJA;EACI,aAAA;ADOJ","file":"estilos.css"}
