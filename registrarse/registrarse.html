@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../inicioSesion/sass/estilos.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <title>social</title>
+  </head>
+  <body>
+    <video autoplay loop class="video">
+      <source src="../inicioSesion/assets/fondo .mp4" />
+    </video>
+    <main
+      class="main border rounded-3 m-2 text-light bg-black bg-gradient bg-opacity-75 m-auto mt-5"
+    >
+      <nav class="navbar bg-body-tertiary rounded-top-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://robohash.org/branch"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            Social
+          </a>
+        </div>
+      </nav>
+      <form action="../inicioSesion/index.html" class="row g-3 p-3">
+        <h1 class="display-6 m-0">Crear cuenta</h1>
+        <div class="col">
+          <label for="inputNombres" class="form-label">Nombres</label>
+          <input type="text" class="form-control" id="inputNombres" />
+        </div>
+        <div class="col">
+          <label for="inputApellidos" class="form-label">Apellidos</label>
+          <input type="text" class="form-control" id="inputApellidos" />
+        </div>
+        <div class="col-12">
+          <label for="inputEmail" class="form-label"
+            >Dirección de correo electrónico</label
+          >
+          <input type="email" class="form-control" id="inputEmail" />
+        </div>
+        <div class="col-12">
+          <label for="inputPassword" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="inputPassword" />
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Crear cuenta</button>
+        </div>
+      </form>
+    </main>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
